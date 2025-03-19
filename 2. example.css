@@ -1,0 +1,165 @@
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 로고 영역 */
+.header {
+    width: 100%; /* 사이드바와 동일한 너비 */
+    height: 110px; /* 로고 영역 높이 설정 */
+    background: #FF7354;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #FC987A;
+}
+
+/* 컨테이너 레이아웃 */
+.container {
+    display: flex;
+    gap: 20px; /* 최신 글과 캘린더 사이 간격 추가 */
+    margin-left: 220px; /* 사이드바 너비만큼 띄움 */
+    padding: 20px;
+    margin-top: 110px; /* 로고 영역 높이만큼 띄움 */
+}
+
+
+/* 좌측 사이드바 */
+.sidebar {
+    width: 200px;
+    height: calc(100vh - 80px); /* 로고 영역 제외한 높이 */
+    position: fixed;
+    left: 0;
+    top: 110px; /* 로고 아래 배치 */
+    background: #FF7354;
+    color: white;
+    padding: 20px;
+    border-right: 3px solid #FC987A;
+    overflow-y: auto; /* 스크롤 가능하도록 설정 */
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #FC987A;
+}
+
+/* 메인 컨텐츠 */
+.content {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 60%; /* 최소 너비 설정 */
+}
+
+.latest-posts h2 {
+    border-bottom: 3px solid #FF7354;
+    padding-bottom: 5px;
+}
+
+.latest-posts ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.latest-posts ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.latest-posts ul li a {
+    text-decoration: none;
+    color: #FF7354;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.latest-posts ul li a:hover {
+    color: #FC987A;
+}
+
+/* 캘린더 */
+.calendar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 30%; /* 최소 너비 설정 */
+}
+
+.calendar h2 {
+    text-align: center;
+    color: #FF7354;
+}
+
+.calendar-box {
+    text-align: center;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar th {
+    background: #FF7354;
+    color: white;
+}
+
+.calendar td {
+    background: #f9f9f9;
+}
+
+.calendar td:hover {
+    background: #FC987A;
+    cursor: pointer;
+}
