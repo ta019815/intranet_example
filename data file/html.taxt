@@ -10,7 +10,7 @@
     <!-- 로고 영역 -->
     <header class="header">
       <div class="logo">
-        <a href="1. intranet_main.html"> <!-- 링크 추가 -->
+        <a href="../1. main/1. intranet_main.html"> <!-- 링크 추가 -->
         <img src="data file/logo 2.png" alt="회사 로고" class="logo-img" />
       </div>
     </header>
@@ -20,8 +20,8 @@
       <aside class="sidebar">
         <h2>📌 메뉴</h2>
         <ul>
-          <li><a href="1. intranet_main.html">📊 수가표</a></li>
-          <li><a href="1. intranet_main.html">🎉 이벤트</a></li>
+          <li><a href="1. intranet_main.html">📢 공지사항</a></li>
+          <li><a href="1. intranet_main.html">🎉 수가표</a></li>
           <li><a href="1. intranet_main.html">⏰ 근태</a></li>
           <li><a href="1. intranet_main.html">📂 아카이브</a></li>
           <li><a href="1. intranet_main.html">📝 일계표</a></li>
