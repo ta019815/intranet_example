@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="2_intranet_main.css" />
   </head>
   <body>
-    <!-- 로고 영역 -->
-    <header class="header">
-      <div class="logo">
-        <a href="1_intranet_main.html"> <!-- 링크 추가 -->
-        <img src="data file/logo 2.png" alt="회사 로고" class="logo-img" />
-      </div>
-    </header>
-
     <div class="container">
       <!-- 좌측 사이드바 -->
       <aside class="sidebar">
-        <h2>메뉴</h2>
+        <!-- 이미지 추가 -->
+        <div class="sidebar-image">
+          <a href="1_intranet_main.html"> <!-- 로고 클릭 시 index.html로 이동 -->
+            <img src="../data file/DoctorPetit.logo.png" alt="로고" class="sidebar-img" />
+          </a>
+        </div>
+        
+        <!-- 구분선 -->
+        <hr />
+
         <ul>
           <li><a href="../1_Notices/1_Notices.html">공지사항</a></li>
           <li><a href="../2_price list/1_price list.html">수가표</a></li>
@@ -29,88 +30,13 @@
           <li><a href="../7_archive/1_archive.html">아카이브</a></li>
           <li><a href="../8_inventory/1_inventory.html">재고 현황</a></li>
         </ul>
-      </aside>
 
-      <!-- 메인 컨텐츠 -->
-      <main class="content">
-        <section class="latest-posts">
-          <h2>📰 최신 글</h2>
-          <ul>
-            <li><a href="#">🔹 사내 보안 정책 변경 안내</a></li>
-            <li><a href="#">🔹 3월 사내 이벤트 일정 공유</a></li>
-            <li><a href="#">🔹 신규 협력사 계약 완료</a></li>
-            <li><a href="#">🔹 재고 현황 업데이트</a></li>
-          </ul>
-        </section>
-      </main>
+        <!-- 로그아웃 버튼 추가 -->
+<hr />
+<div class="log out">
+  <a href="../login/1_login.html" class="logout-button">로그아웃</a>
+</div>
 
-      <!-- 우측 캘린더 -->
-      <aside class="calendar">
-        <h2>📅 캘린더</h2>
-        <div class="calendar-box">
-          <p>📆 2025년 3월</p>
-          <table>
-            <thead>
-              <tr>
-                <th>일</th>
-                <th>월</th>
-                <th>화</th>
-                <th>수</th>
-                <th>목</th>
-                <th>금</th>
-                <th>토</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-              </tr>
-              <tr>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </aside>
-    </div>
   </body>
 </html>
