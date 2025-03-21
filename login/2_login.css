@@ -1,0 +1,64 @@
+/* 1. 전체 화면 스타일 */
+body {
+  font-family: Arial, sans-serif; /* 기본 글꼴 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이만큼 */
+  background-color: #f4f4f4; /* 배경색 */
+}
+
+/* 2. 로그인 박스 스타일 */
+.login-container {
+  background: white; /* 박스 배경 흰색 */
+  padding: 20px;
+  border-radius: 10px; /* 모서리를 둥글게 */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  text-align: center; /* 안에 있는 글자 가운데 정렬 */
+  width: 350px;
+  padding: 40px; /* 안쪽 여백을 더 늘려서 크기 키움 */
+}
+
+/* 3. 입력창 스타일 */
+input {
+  display: block;
+  width: calc(100%); /* 버튼과 균형을 맞추기 위해 조정 */
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* 글자 크기를 동일하게 */
+  box-sizing: border-box; /* 패딩 포함 크기 조정 */
+}
+
+/* 4. 버튼 스타일 */
+button {
+  width: 100%;
+  padding: 12px;
+  height: 44px; /* 입력창과 동일한 높이 */
+  background-color: #ff7354;
+  color: white; /* 글자색 흰색 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* 마우스 올리면 손가락 모양 */
+  font-size: 16px; /* 글자 크기 동일하게 */
+}
+
+/* 5. 버튼 호버 효과 (마우스를 올리면 색이 변함) */
+button:hover {
+  background-color: #fc987a; /* 더 진한 파란색 */
+}
+
+/* 페이지가 서서히 사라지는 효과 */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

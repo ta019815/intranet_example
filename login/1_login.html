@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="2_login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>닥터쁘띠의원 명동점</h2>
+      <input type="text" id="username" placeholder="아이디" />
+      <input type="password" id="password" placeholder="비밀번호" />
+      <!-- 아이디에 텍스트, 비밀번호에 패스워드 태그는 마스킹 차이 -->
+      <!-- id는 css, js 지정 때문에 추가 됨 -->
+      <button onclick="login()">로그인</button>
+      <p id="message"></p>
+    </div>
+    <script src="3_login.js"></script>
+  </body>
+</html>
